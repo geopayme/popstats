@@ -52,7 +52,7 @@ class Cacher
     * @param   $cacheTime  The length of time to cache the requested URL.
     */
    function fetch($url, $cacheTime=86600)
-   {  	 
+   {     
       // Determine cache file name
       $cacheFile = $this->cachedir . md5($url) . $this->suffix . '.cache' ;
       $refresh = true;
